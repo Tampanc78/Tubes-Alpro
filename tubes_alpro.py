@@ -49,6 +49,7 @@ def show_tabungan_page():
     if st.button("Simpan"):
         st.session_state.pemasukan = pemasukan
         st.session_state.persentase_tabungan = persentase_tabungan
+        st.success("Data tersimpan")
 
 def show_pengeluaran_page():
     st.header("Pengeluaran")
