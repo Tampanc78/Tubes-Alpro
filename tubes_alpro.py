@@ -70,7 +70,7 @@ def show_pengeluaran_page():
         else:
             st.session_state.data = data
 
-        st.success("Data pengeluaran telah berhasil disimpan!")
+        st.success("Data tersimpan, jangan boros ya!")
 
 def show_ringkasan_page(data):
     st.write(data)
