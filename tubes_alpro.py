@@ -70,6 +70,8 @@ def show_pengeluaran_page():
         else:
             st.session_state.data = data
 
+        st.success("Data pengeluaran telah berhasil disimpan!")
+
 def show_ringkasan_page(data):
     st.write(data)
     category_sum = data.groupby('Jenis_Pengeluaran')['Jumlah_Pengeluaran'].sum().reset_index()
